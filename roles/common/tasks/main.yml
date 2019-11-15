@@ -1,0 +1,7 @@
+---
+# This Playbook runs all the common plays in the deployment
+
+- name: Create the hosts file for all machines
+  file:
+     path: "/tmp/testRole.txt"
+     state: touch
